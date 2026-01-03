@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Portofolio Liza Zulaikha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" onclick="showPage('home')">Home</a></li>
+        <li class="nav-item"><a class="nav-link" onclick="showPage('profile')">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" onclick="showPage('portfolio')">Karya</a></li>
+        <li class="nav-item"><a class="nav-link" onclick="showPage('media')">Media</a></li>
+        <li class="nav-item"><a class="nav-link" onclick="showPage('contact')">Kritik & Saran</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="page active hero">
+  <div class="container text-center">
+    <div class="glass p-5">
+      <img src="saya.jpg" class="profile-img">
+      <h1 class="fw-bold mt-3 text-warning">Liza Zulaikha</h1>
+      <p class="lead">Mahasiswa | Web Developer</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section id="profile" class="page">
+  <div class="container">
+    <div class="profile-wrapper">
+      <div class="profile-card">
+        <img src="saya.jpg">
+        <h2>Profil Saya</h2>
+        <p><b>Nama:</b> Liza Zulaikha</p>
+        <p><b>NIM:</b> 251011700584</p>
+        <p><b>Kelas:</b> 01SIFP010</p>
+        <p><b>Program Studi:</b> Sistem Informasi</p>
+        <p><b>Alamat:</b> Cilodong, Depok</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="page">
+
+    <div class="container">
+        <h2 class="text-center section-title fw-bold mb-5">Karya & Project</h2>
+
+        <div class="row g-4 portfolio">
+
+            <div class="col-md-4">
+                <div class="glass shine pop p-3" data-bs-toggle="modal" data-bs-target="#modal1">
+                    <img src="tugas1.png">
+                    <h5 class="mt-3 fw-semibold">Project 1</h5>
+                    <p>Website HTML & CSS.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="glass shine pop p-3" data-bs-toggle="modal" data-bs-target="#modal2">
+                    <img src="tugas2.png">
+                    <h5 class="mt-3 fw-semibold">Project 2</h5>
+                    <p>Website JavaScript dinamis.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="glass shine pop p-3" data-bs-toggle="modal" data-bs-target="#modal3">
+                    <img src="tugas3.png">
+                    <h5 class="mt-3 fw-semibold">Project 3</h5>
+                    <p>Portofolio Bootstrap.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- MEDIA -->
+<section id="media" class="page">
+
+    <div class="container">
+        <h2 class="text-center section-title fw-bold mb-5">Media Saya</h2>
+
+        <div class="row g-4">
+
+            <!-- FOTO -->
+            <div class="col-md-6">
+                <div class="glass shine pop p-4 text-center">
+                    <h4 class="fw-semibold mb-3">Galeri Foto</h4>
+
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <img src="foto1.jpg" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6">
+                            <img src="foto2.jpg" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6">
+                            <img src="foto3.jpg" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6">
+                            <img src="foto4.jpg" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6">
+                            <video src="pantai.mp4" class="img-fluid rounded" controls></video>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- AUDIO -->
+            <div class="col-md-6">
+                <div class="glass shine pop p-4 text-center">
+                    <h4 class="fw-semibold mb-3">My fav songs</h4>
+
+                    <p class="mb-2">🎵 Iris by Go go dools</p>
+                    <audio controls class="w-100 mb-3">
+                        <source src="lagu1.mp3" type="audio/mpeg">
+                    </audio>
+
+                    <p class="mb-2">🎵 2112 by Reality club</p>
+                    <audio controls class="w-100">
+                        <source src="lagu2.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="page">
+
+    <div class="container">
+        <div class="glass p-5 mx-auto" style="max-width:600px;">
+            <h2 class="section-title fw-bold text-center mb-4">Kritik & Saran</h2>
+
+            <form id="contact-form">
+    <input type="text" name="name" class="form-control mb-3" placeholder="Nama" required>
+    <input type="email" name="email" class="form-control mb-3" placeholder="Email" required>
+    <textarea name="message" class="form-control mb-3" rows="4" placeholder="Pesan" required></textarea>
+    <button type="submit" class="btn btn-primary w-100 pop">
+        Kirim Pesan
+    </button>
+    <p id="status" class="mt-3 text-center fw-semibold"></p>
+</form>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-3">
+    <p class="mb-0">&copy; 2025 Liza Zulaikha</p>
+</footer>
+
+<!-- MODAL -->
+<div class="modal fade" id="modal1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass p-4">
+            <h4>Project 1</h4>
+            <p>Detail project pertama.</p>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal2">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass p-4">
+            <h4>Project 2</h4>
+            <p>Detail project kedua.</p>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal3">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass p-4">
+            <h4>Project 3</h4>
+            <p>Detail project ketiga.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
